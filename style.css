@@ -1,5 +1,50 @@
+
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'poppins', sans-serif;
+
+}
+
+:root{
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color :#0ef;
+
+  
+    
+}
+html{
+    font-size: 61.5%;
+    overflow: hidden;
+
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+
+}
+
+.container{
+	background:white;
+	padding: 15px;
+	margin: auto;
+	block-size: 0%;
+}
+
+
 .main{
-	padding:20px;
+	padding:22px;
 	font-family: 'Helvetica', serif;
 	box-shadow: 5px 5px 7px 5px #888888;
 	
@@ -8,6 +53,8 @@
 	font-size: 40px;
 	text-align:center;
 	font-family: 'Helvetica', serif;
+	background: var(--second-bg-color);
+	padding: 10px;
 	
 }
 input{
@@ -22,10 +69,42 @@ input{
 input[type=submit] {
 	font-family: 'Helvetica', serif;
 	width: 100%;
-	background-color: #767474;
+	background-color: green;
 	border: none;
 	color: white;
 	padding: 16px 32px;
 	margin: 4px 2px;
 	border-radius: 10px;
+}
+
+
+.navbar a {
+    font-size: 1.9rem;
+    color: var(--text-color);
+	padding: 1px;
+    margin-left: 4rem;
+    transition: .3s;
+	align-items: center;
+
+
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+
+}
+
+.h1{
+	text-align: center;
+	background: var(--second-bg-color);
+	font-family:'Times New Roman', Times, serif ;
+	padding: 8px;
+}
+
+.container1{
+	padding: 5px;
+	background: var(--second-bg-color);
+	border: #0ef;
+	align-items: center	;
+	flex: 0 0 0 1rem;
 }
